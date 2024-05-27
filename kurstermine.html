@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <title>certwerk AG - Sicherheitsschulungen & ISO-Zertifizierungen</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+            <!--------Navigation-------->
+        <div id="navigation" class="navigation">
+
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="schulungen.html">Sicherheitsschulungen</a></li>
+                    <li><a href="iso.html">ISO-Zertifizierungen</a></li>
+                    <li><a href="kurstermine.html">Kurstermine</a></li>
+                    <li><a href="about.html">Über uns</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    <main>
+
+        <section id="kurstermine">
+
+            <!--------LOGO--------->
+            <a href="index.html">
+                <img alt="Logo certwerk" src="images/Logo.png" id="logo">
+            </a>
+            <!--------Button Navigation-------->
+            <div class="menubtn" id="menubtn">
+                    <img id="menu" alt="Menu Button" src="images/menu.png">
+            </div>
+            
+            <!--------STARTSEITE-------->
+            <div class="title">
+            <h1 class="rest-h1">Kurstermine</h1>
+            <h3>Hier finden Sie alle bereits festgelegten Kurstermine & Standorte.</h3>
+                <br><br>
+                
+            </div>
+
+            <br>
+            <h2 class="h22">2024</h2>
+
+            <div class="termine">
+                <a href="quartal_1-24.pdf" target="_blank"><p>Januar - März</p></a>
+                <a href="quartal_2-24.pdf" target="_blank"><p>April - Juni</p></a>
+                <a href="quartal_3-24.pdf" target="_blank"><p>Juli - September</p></a>
+                <a href="quartal_4-24.pdf" target="_blank"><p>Oktober - Dezember</p></a>
+            </div>
+
+            <br>
+            <h2 class="h22">2025</h2>
+
+            <div class="termine">
+                <p><i>Folgen noch</i></p>
+            </div>
+
+            <br><br><br><br><br><br><br>
+                <div class="kontakter">
+                    <a href="kontakt.html" class="mehr-btn">Kontakt</a>
+                </div>
+            
+
+        </section>
+
+      
+    </main>
+
+        <!------------FOOTER------------>
+        <footer>
+
+            <div class="footer-grid">
+
+                <div class="footer-grider">
+                    <p><b>Kontakt</b></p>
+                    <p class="footer-bio">certwerk (Schweiz) AG<br>Bundesplatz 10<br>6300 Zug<br><a href="tel:+41415415252">+41 (0)41 541 52 52</a><br><a href="mailto:office@certwerk.ch">office@certwerk.ch</a></p>
+                </div>
+
+                <div class="footer-grider">
+                    <p class="follow"><b>Folgen Sie uns</b></p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/certwerk" target="_blank"><img src="images/facebook.png"></a><br>
+                        <a href="https://www.linkedin.com/company/certwerk-schweiz-ag/" target="_blank"><img src="images/linkedin.png"></a><br>
+                        <a href="mailto:office@certwerk.ch" target="_blank"><img src="images/email.png"></a>
+                    </div>
+                </div>
+
+                <div class="footer-grider">
+                    <p><b>Website</b></p>
+                    <p class="footer-bio">WEB-WORX<br>Design, Code &<br>Service by WEB-WORX<br><a href="http://web-worx.ch/" target="_blank">www.web-worx.ch</a></p>
+                </div>
+
+            </div>
+
+            <div class="footer-foot">
+                <a href="impressum.html"><p>Impressum</p></a>
+                <div class="strich"></div>
+                <a href="datenschutz.html">Datenschutz & Cookie-Richtlinien</a>
+                <div class="strich"></div>
+                <a href="agb.html">AGB's</a>
+            </div>
+
+        </footer>
+
+    <!------------JAVASCRIPT------------>
+    <script>
+        var menubtn = document.getElementById('menubtn');
+        var navigation = document.getElementById('navigation');
+        var menu = document.getElementById('menu');
+
+        menubtn.onclick = function() {
+        var computedStyle = window.getComputedStyle(navigation); // Aktuellen Wert der CSS-Eigenschaften erhalten
+        var rightValue = computedStyle.getPropertyValue('right'); // Wert der 'right'-Eigenschaft erhalten
+
+    if(rightValue === "-300px") {
+        navigation.style.right = "0";
+        menu.src = "images/cancel.png";
+    } else {
+        navigation.style.right = "-300px";
+        menu.src = "images/menu.png";
+    }
+}
+    </script>
+
+</body>
+</html>
