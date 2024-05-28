@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <title>certwerk AG - Sicherheitsschulungen & ISO-Zertifizierungen</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+            <!--------Navigation-------->
+        <div id="navigation" class="navigation">
+
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="schulungen.html">Sicherheitsschulungen</a></li>
+                    <li><a href="iso.html">ISO-Zertifizierungen</a></li>
+                    <li><a href="kurstermine.html">Kurstermine</a></li>
+                    <li><a href="ueber_uns.html">Über uns</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    <main>
+
+        <section id="form">
+
+            <!--------LOGO--------->
+            <a href="index.html">
+                <img alt="Logo certwerk" src="images/logo.png" id="logo">
+            </a>
+            <!--------Button Navigation-------->
+            <div class="menubtn" id="menubtn">
+                    <img id="menu" alt="Menu Button" src="images/menu.png">
+            </div>
+            
+            <!--------CONTACT-------->
+
+            <div class="title">
+                <h1 class="rest-h1">Kontaktieren Sie uns</h1>
+            </div>
+            <br>
+            <div class="footer-foot">
+                <p>certwerk (Schweiz) AG</p>
+                <div class="strich"></div>
+                <p>Bundesplatz 10</p>
+                <div class="strich"></div>
+                <p>6300 Zug</p>
+            </div>
+
+            <div class="footer-foot">
+                <a href="tel:+41415415252"><p>+41 (0)41 541 52 52</p></a>
+                <div class="strich"></div>
+                <a href="mailto:office@certwerk.ch"><p>office@certwerk.ch</p></a>
+            </div>
+
+            <form id="contact-form">
+                                   
+                  <input name="name" type="text" class="contact-inputs" placeholder="Name *" required>
+                  <input name="company" type="text" class="contact-inputs" placeholder="Firma (optional)">
+                  <input name="email" type="email" class="contact-inputs" placeholder="E-Mail *" required>
+                  <input name="phone-number" type="text" id="phone-number" class="contact-inputs" placeholder="Telefonnummer *" required>
+                  <p class="form-title">Meine Anfrage betrifft:</p>
+
+                    <div class="form-grid">
+                        <div>
+
+                            <p class="form-titles">Sicherheitsschulung(en)</p>
+                            <div class="inputs">
+                                <input type="checkbox" id="anschlagen-kurs">
+                                <label for="anschlagen-kurs" value="0">Anschlagen von Lasten</label>
+                            </div>
+                            <div class="inputs">
+                                <input type="checkbox" id="brandsicherungs-kurs">
+                                <label for="brandsicherungs-kurs" value="1">Brandsicherungsposten</label>
+                            </div>
+                            <div class="inputs">
+                                <input type="checkbox" id="flanschen-kurs">
+                                <label for="flanschen-kurs" value="2">Flanschen-Schulung</label>
+                            </div>
+                            <div class="inputs">
+                                <input type="checkbox" id="ladungssicherungs-kurs">
+                                <label for="ladungssicherungs-kurs" value="3">Ladungssicherung</label>
+                            </div>
+                            <div class="inputs">
+                                <input type="checkbox" id="psaga-kurs">
+                                <label for="psaga-kurs" value="4">PSA gegen Absturz</label>
+                            </div>
+                            <div class="inputs">
+                                <input type="checkbox" id="scc-kurs">
+                                <label for="scc-kurs" value="5">SCC-Kurs</label>
+                            </div>
+                        
+                        </div>
+
+                        <div>
+
+                        <p class="form-titles">ISO-Zertifizierung(en):</p>
+
+                            <div class="inputs">
+                                <input type="checkbox" id="iso9001">
+                                <label for="iso9001" value="6">ISO 9001 - Qualitätsmanagement</label>
+                            </div>
+                            <div class="inputs">
+                                <input type="checkbox" id="iso14001">
+                                <label for="iso14001" value="7">ISO 14001 - Umweltschutz</label>
+                            </div>
+                            <div class="inputs">
+                                <input type="checkbox" id="iso27001">
+                                <label for="iso27001" value="8">ISO 27001 - IT-Sicherheit</label>
+                            </div>
+                            <div class="inputs">
+                                <input type="checkbox" id="iso45001">
+                                <label for="iso45001" value="9">ISO 45001 - Arbeitssicherheit</label>
+                            </div>
+                            <div class="inputs">
+                                <input type="checkbox" id="iso-andere">
+                                <label for="iso-andere" value="10">Andere ISO (Anfrage)</label>
+                            </div>
+                        </div>
+                    </div>
+                  <textarea name="message" class="contact-inputs" placeholder="Ihre Nachricht" required></textarea>
+
+                <br>
+                    <input type="checkbox" id="accept" required>
+                    <label for="accept" value="11">Ich bin mit der Verarbeitung meiner Personendaten gemäss
+                        <a href="datenschutz.html">Datenschutzerklärung</a> einverstanden. *
+                    </label>
+
+
+                  <button class="submit-button" type="submit"><span></span>Senden</button>
+           
+            </form>
+
+            
+            
+        </section>
+
+        <section id="maps">
+
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2712.305779348113!2d8.512106975700956!3d47.17144941792643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479aab9cafcf14f9%3A0x17ecab016dfe7b72!2scertwerk%20(Schweiz)%20AG!5e0!3m2!1sde!2spt!4v1715710846106!5m2!1sde!2spt" width="600" height="450" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+      
+    </main>
+
+        <!------------FOOTER------------>
+        <footer>
+
+            <div class="footer-grid">
+
+                <div class="footer-grider">
+                    <p><b>Kontakt</b></p>
+                    <p class="footer-bio">certwerk (Schweiz) AG<br>Bundesplatz 10<br>6300 Zug<br><a href="tel:+41415415252">+41 (0)41 541 52 52</a><br><a href="mailto:office@certwerk.ch">office@certwerk.ch</a></p>
+                </div>
+
+                <div class="footer-grider">
+                    <p class="follow"><b>Folgen Sie uns</b></p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/certwerk" target="_blank"><img src="images/facebook.png"></a><br>
+                        <a href="https://www.linkedin.com/company/certwerk-schweiz-ag/" target="_blank"><img src="images/linkedin.png"></a><br>
+                        <a href="mailto:office@certwerk.ch" target="_blank"><img src="images/email.png"></a>
+                    </div>
+                </div>
+
+                <div class="footer-grider">
+                    <p><b>Website</b></p>
+                    <p class="footer-bio">WEB-WORX<br>Design, Code &<br>Service by WEB-WORX<br><a href="http://web-worx.ch/" target="_blank">www.web-worx.ch</a></p>
+                </div>
+
+            </div>
+
+            <div class="footer-foot">
+                <a href="impressum.html"><p>Impressum</p></a>
+                <div class="strich"></div>
+                <a href="impressum.html#datenschutz">Datenschutz & Cookie-Richtlinien</a>
+                <div class="strich"></div>
+                <a href="impressum.html#agb">AGB's</a>
+            </div>
+
+        </footer>
+
+    <!------------JAVASCRIPT------------>
+    <script>
+        var menubtn = document.getElementById('menubtn');
+        var navigation = document.getElementById('navigation');
+        var menu = document.getElementById('menu');
+
+        menubtn.onclick = function() {
+        var computedStyle = window.getComputedStyle(navigation); // Aktuellen Wert der CSS-Eigenschaften erhalten
+        var rightValue = computedStyle.getPropertyValue('right'); // Wert der 'right'-Eigenschaft erhalten
+
+    if(rightValue === "-300px") {
+        navigation.style.right = "0";
+        menu.src = "images/cancel.png";
+    } else {
+        navigation.style.right = "-300px";
+        menu.src = "images/menu.png";
+    }
+}
+    </script>
+
+    <script>
+        document.getElementById('phone-number').addEventListener('input', function (e) {
+            // Erlaubt nur Zahlen, Leerzeichen und das Pluszeichen
+            this.value = this.value.replace(/[^0-9\s+]/g, '');
+        });
+
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
+            const phoneNumber = document.getElementById('phone-number').value;
+            if (!/^[0-9\s+]+$/.test(phoneNumber)) {
+                e.preventDefault(); // Verhindert das Absenden des Formulars
+                alert('Bitte geben Sie eine gültige Telefonnummer ein.');
+            }
+        });
+    </script>
+
+</body>
+</html>

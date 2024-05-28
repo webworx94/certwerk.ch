@@ -1,0 +1,1349 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Raleway;
+    color: white;
+}
+
+/*----------- NAVIGATION -----------*/
+.navigation {
+    width: 300px;
+    height: 100svh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    right: -300px;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center; /* Zentriert die Liste vertikal */
+    transition: 1s;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 1.8rem;
+    margin-top: 3rem;
+}
+
+nav ul li {
+    margin-bottom: 5rem;
+    font-weight: 500;
+    font-size: 1.2rem;   
+}
+
+nav ul li a {
+    text-decoration: none;;
+    transition: transform 0.5s ease, text-decoration 1s;
+    color: white;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    transform: scale(1.02);
+}
+
+/*--------------- Home ---------------*/
+/*----------- Home - START -----------*/
+#home {
+    height: 100svh;
+    background: linear-gradient(
+        rgba(0,0,0,0.5), 
+        rgba(0, 0, 0, 1.0)), 
+        url(images/home.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#logo {
+    max-width: 255px;
+    height: auto;
+    position: absolute;
+    top: 37px;
+    left: 7%;
+}
+
+.menubtn {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    z-index: 3;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.menubtn img {
+    width: 55px;
+    height: auto;
+    padding-top: 15px;
+    filter: invert(100%);
+    transition: transform 0.6s ease;
+}
+
+.menubtn img:hover {
+    transform: scale(1.13);
+}
+
+h1, h3 {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+h1 {
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+
+.main-h1 {
+    padding-top: 300px;
+}
+
+.rest-h1 {
+    padding-top: 100px;
+}
+
+.imp-title {
+    padding: 2rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imp-h1 {
+    text-align: start;
+    padding-top: 150px;
+    margin-bottom: -0.8rem;
+    font-size: 2rem;
+}
+.imp-h1-1 {
+    padding-top: 40px;
+    font-size: 2rem;
+    margin-bottom: -0.8rem;
+}
+
+h2 {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 1.9rem;
+    color: black;
+}
+
+.h22 {
+    color: white;
+    font-weight: 500;
+    margin-top: -1.5rem;
+}
+
+h3 {
+    font-weight: 300;
+    padding-top: 20px;
+    font-size: 1.3rem;
+}
+
+.rest-h3 {
+    font-size: 1.2rem;
+    padding-top: 2.2rem;
+}
+
+h3 a {
+    color: white;
+    text-decoration: none;
+    box-shadow: 0px 0.06em 0px #fff;
+}
+
+h3 a:hover {
+    color: rgba(250, 250, 250, 0.7);
+}
+
+h4 {
+    font-weight: 550;
+    font-size: 1.3rem;
+    margin: 0 0 0.5rem 0;
+}
+
+h5 {
+    font-weight: 350;
+    font-size: 1.15rem;
+    margin: 0 0 0.5rem 0;
+}
+
+.btn {
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn a {
+    color: white;
+    border: 2px solid #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.btn a:hover {
+    color: black;
+    background-color: #fff;
+}
+
+/*----------- Home - TORSTEN -----------*/
+#quoter {
+    width: 100%;
+    background: linear-gradient(210deg, #646464, #969696);
+}
+
+.quote-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quote-text {
+    flex-grow: 1;
+    padding: 4rem 1.5rem;
+}
+
+.quote-container img {
+    width: 250px;
+    object-fit: cover;
+}
+
+
+.quote-text p {
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.quote-text p:first-of-type {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+
+
+/*----------- Home - IHRE VORTEILE -----------*/
+#benefits {
+    width: 100%;
+    background: linear-gradient(10deg, #464545, #615e5e);
+}
+
+.grid-container {
+    padding: 4rem 2rem 4rem 4.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.grider {
+    padding: 1rem;
+    text-align: center;
+}
+
+.grider:not(:first-child) {
+    background-color: #6e6b6b;
+    transition: background-color 0.5s ease, transform 0.7s ease;
+}
+
+.grider:not(:first-child):hover {
+    background-color: #3d3b3b;
+    cursor: default;
+    transform: scale(1.05);
+}
+
+.grider:first-child {
+    border-left: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.mini-title {
+    font-size: 1.25rem;
+}
+.mini-bio {
+    margin-top: 1.19rem;
+}
+
+/*----------- Home - GO TO -----------*/
+
+#go-to {
+    width: 100%;
+    background: linear-gradient(210deg, #000075, #1111b0);
+}
+
+#go-to h2 {
+    color: white;
+    font-weight: 600;
+}
+
+.go-to-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.btn2 {
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.btn2 a {
+    color: white;
+    border: 2px solid #fff;
+    padding: 1rem 2rem;
+    margin: 0 2rem;
+    text-decoration: none;
+    transition: 0.5s;
+    text-align: center;
+    min-width: 170px;
+}
+
+.btn2 a:hover {
+    color: black;
+    background-color: #fff;
+}
+
+/*----------- Home - PARTNER -----------*/
+#partner {
+    background-color: #eeeeee;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+#partner .icon img {
+    height: 45px;
+    width: auto;
+}
+
+.partner {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    padding: 3rem 2rem;
+}
+
+.partner img {
+    height: 60px;
+    width: auto;
+    transition: transform 0.9s ease;
+}
+
+.partner a:last-child img {
+    height: 33px;
+    width: auto;
+}
+
+.partner a img:hover {
+    transform: scale(1.2);
+}
+
+/*----------- Home - FOOTER -----------*/
+footer {
+    width: 100%;
+    background-color: #000;
+}
+
+.footer-grid {
+    padding: 3rem 2rem 1rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+    
+.footer-bio {
+    margin-top: 2rem;
+}
+
+.footer-grider a, .grider4 a {
+    color: white;
+}
+.footer-grider a:hover, .footer-foot a:hover {
+    color: rgba(250, 250, 250, 0.7);
+}
+
+.footer-grider p:nth-of-type(2) {
+    line-height: 2;
+}
+
+.follow {
+    padding-top: -8rem;
+}
+
+.social-icons {
+    display: block;
+    margin: 1.7rem auto 0 auto;
+    padding-left: 2.2rem;
+}
+
+.social-icons img {
+    height: 40px;
+    width: auto;
+    filter: invert(100%);
+    margin-bottom: 0.75rem;
+    transition: transform 0.9s ease;
+}
+
+.social-icons img:hover {
+    transform: translateY(-8px);
+}
+
+.footer-foot {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.footer-foot a {
+    color: white;
+    font-size: 0.8rem;
+}
+
+.strich {
+    width: 1px;
+    height: 1rem;
+    background-color: #fff;
+    margin: 1px 1rem 0 1rem;
+}
+
+/*--------------- Schulung ---------------*/
+/*----------- Schulung - Home -----------*/
+#schulung {
+    min-height: 100svh;
+    width: 100%;
+    background: linear-gradient(
+        rgba(0,0,0,0.5), 
+        rgba(36, 36, 36, 0.9)), 
+        url(images/schulungen.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.grid2-container {
+    padding: 5.5rem 0rem 2.5rem 0;
+    max-width: 1110px; /* Ändere von 80% auf auto */
+    margin: 0 auto; /* Horizontal zentriert */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 30px;
+}
+
+#schulung .grid2-container a {
+    color: white;
+    text-decoration: none;
+}
+
+.grider2 {
+    border: 1px solid #fff;
+    padding: 1rem 1.5rem;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    transition: 0.2s;
+    width: 350px;
+    height: 220px;
+}
+
+.grider3 {
+    border: 1px solid #fff;
+    padding: 0rem 1.5rem;
+    background: transparent;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    transition: 0.2s;
+    width: 330px;
+    height: 220px;
+}
+
+.grider2:hover, .grider3:hover {
+    border: 1px solid #fff;
+    color: #000;
+    background: rgba(250, 250, 250, 0.99);
+    cursor: pointer;
+}
+
+.grider2:hover .grider2-top img, .grider3:hover img {
+    filter: invert(0%);
+}
+
+.grider2-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grider2-top img {
+    filter: invert(100%);
+    height: 80px;
+    object-fit: cover;
+    margin: 10px 10px;
+    transition: 0.2s;
+    flex-basis: 30%;
+    transform: translateY(8px);
+}
+
+.grider2-top p {
+    flex-basis: 70%;
+}
+
+.grider2 p {
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+/*----------- Schulung - 1. Kurs Anschlagen von Lasten -----------*/
+#anschlagen {
+    min-height: 100svh;
+    width: 100%;
+    background: linear-gradient(
+        rgba(0,0,0,0.5), 
+        rgba(0, 0, 0, 0.7)),
+        url(images/anschlagen_von_lasten_background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.schulung {
+    max-width: 1200px;
+    margin: 0 auto;
+    /*border: 1px solid white;*/
+    padding: 100px 0 0 0;
+}
+
+.top-schulung {
+    display: flex;
+    justify-content: space-between;
+    /*border: 1px solid white;*/
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.schulung .top-schulung img {
+    width: 550px;
+    object-fit: cover;
+}
+
+.schulung-bio {
+    padding: 0 2rem;
+    background-color: rgba(26, 26, 26, 0.7);
+}
+
+.bio-kasten {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+
+.schulungs-steckbrief {
+    padding: 0 2rem;
+}
+
+.schulungs-steckbrief span {
+    font-size: 1rem;
+}
+
+.schulung-bio, .schulungs-column {
+    box-shadow: 0px 0px 3px black;
+}
+
+.schulungs-titel {
+    color: white;
+    margin-top: -1rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.schulung-bio h3 {
+    font-size: 1.5rem;
+    font-weight: 650;
+}
+
+.schulung-bio p {
+    padding: 0.7rem 0 1rem 0;
+    font-size: 1.3rem;
+}
+
+.bottom-schulung {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.bottom-schulung h4 {
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.schulungs-column {
+    padding: 2rem 1.5rem;
+    margin: 2rem 0;
+    background-color: rgba(26, 26, 26, 0.7);
+}
+
+.schulungs-column h3 {
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin: 2.4rem 0 0 0;
+    text-decoration: underline;
+}
+
+.buton {
+    margin-top: 2rem;
+}
+
+.schulungs-column .btn2 {
+    padding: 13px 0;
+}
+
+.btn2 a {
+    min-width: 250px;
+}
+
+.wieso {
+    padding-bottom: 2.5rem;
+}
+
+.schulungs-column ul li {
+    margin: 0 0 0.5rem 1.2rem;
+}
+
+.abstand-unten {
+    padding-bottom: 1.5rem;
+}
+
+
+/*----------- Schulung - 2. Kurs SCC -----------*/
+#scc-kurse {
+    min-height: 100svh;
+    width: 100%;
+    background: linear-gradient(
+        rgba(0,0,0, 0.5), 
+        rgba(0, 0, 0, 0.65)),
+        url(images/scc_background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*----------- Schulung - 3. PSAgA -----------*/
+#psaga {
+    min-height: 100svh;
+    width: 100%;
+    background: linear-gradient(
+        rgba(0,0,0,0.4), 
+        rgba(0, 0, 0, 0.9)), 
+        url(images/psa_ga_titelbild.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/*----------- Schulung - 4. Flanschen -----------*/
+#flanschen {
+    min-height: 100svh;
+    width: 100%;
+    background: linear-gradient(
+        rgba(0,0,0,0.4), 
+        rgba(0, 0, 0, 0.6)),
+        url(images/flanschen_background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/*----------- Schulung - 5. Ladungssicherung -----------*/
+#ladungssicherung {
+    min-height: 100svh;
+    width: 100%;
+    background: linear-gradient(
+        rgba(0,0,0,0.5), 
+        rgba(0, 0, 0, 0.9)),
+        url(images/cargo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/*----------- Schulung - 6. Brandschutz -----------*/
+#brandschutz {
+    min-height: 100svh;
+    width: 100%;
+    background: linear-gradient(
+        rgba(0,0,0,0.5), 
+        rgba(0, 0, 0, 0.7)),
+        url(images/brandsicherung_background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* TEST */
+.side-nav {
+    position: fixed;
+    left: 50px;
+    height: 70%;
+    top: 0;
+    opacity: 0;
+    transition: opacity 1.0s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(20%);
+  }
+  
+  .side-nav a {
+    margin: 30px 0; /* Platz zwischen den Links */
+  }
+  
+  .side-nav.show {
+    opacity: 1;
+  }
+
+  .side-nav a img {
+    filter: invert(100%);
+    height: 50px;
+    object-fit: cover;
+    opacity: 0.5;
+    transition: 0.3s;
+  }
+
+  .side-nav a img:hover {
+    opacity: 1.0;
+  }
+  .uppfeil {
+    transform: scale(0.8);
+  }
+
+/*----------- ISO -----------*/
+#iso {
+    min-height: 100svh;
+    background: linear-gradient(
+        rgba(0,0,0,0.2), 
+        rgba(0, 0, 0, 0.9)), 
+        url(images/quality-iso.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.end p {
+    text-align: center;
+    margin: 3rem auto 0 auto;
+    font-size: 1.2rem;
+}
+
+.end p a {
+    color: white;
+}
+
+.grid3-container {
+    padding: 3.5rem 0 0 0;
+    margin: 0 auto; /* Horizontal zentriert */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 900px;
+    justify-items: center;
+    gap: 40px;
+}
+
+.grid3-container a {
+    color: white;
+    text-decoration: none;
+}
+
+.grid3-container .grider3 .mini-title {
+    margin: 0.8rem 0 0.5rem 0;
+}
+
+.grider3 .iso-icon {
+    height: 7rem;
+    filter: invert(100%);
+    margin-top: 1rem;
+    transform: scale(0.8);
+}
+
+.continuer {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0 0 0;
+    padding-bottom: 3rem;
+}
+.continuer img {
+    height: 3rem;
+    object-fit: cover;
+    filter: invert(100%);
+    opacity: 0.5;
+    transition: transform 0.9s ease, opacity 0.4s ease;
+}
+.continuer img:hover {
+    transform: translateY(10px);
+    opacity: 1.0;
+}
+.continuer2 {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0 0 0;
+    padding-bottom: 3rem;
+}
+.continuer2 img {
+    height: 3rem;
+    object-fit: cover;
+    filter: invert(100%);
+    opacity: 0.5;
+    transition: transform 0.9s ease, opacity 0.4s ease;
+}
+.continuer2 img:hover {
+    transform: translateY(-10px);
+    opacity: 1.0;
+}
+
+
+.iso-img {
+    height: 20rem;
+    padding: 3rem;
+    object-fit: cover;
+    filter: invert(100%);
+}
+
+#iso-9001 .schulung-bio a {
+    color: white;
+}
+#iso-9001 .schulung-bio a:hover {
+    color: rgba(250, 250, 250, 0.7);
+}
+
+/*----------- ISO - 9001 -----------*/
+#iso-9001 {
+    min-height: 100svh;
+    background: linear-gradient(
+        rgba(0,0,0,0.2), 
+        rgba(0, 0, 0, 0.9)), 
+        url(images/iso2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*----------- TERMINE -----------*/
+#kurstermine {
+    min-height: 100svh;
+    background: linear-gradient(
+        rgba(0,0,0,0.2), 
+        rgba(0, 0, 0, 0.9)), 
+        url(images/architect2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.termine {
+    margin: 1rem auto 0 auto;
+    text-align: center;
+    width: 200px;
+}
+
+.termine a {
+    color: white;
+    display: block;
+    margin-bottom: 1rem;
+}
+.termine a:hover, .kontakter a:hover {
+    color: rgba(250, 250, 250, 0.6);
+}
+.kontakter {
+    text-align: center;
+}
+.kontakter a {
+    color: white;
+}
+
+/*----------- Über uns -----------*/
+#about {
+    min-height: 100svh;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.2), 
+        rgba(0, 0, 0, 0.9)), 
+        url(images/about.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.grider4 {
+    position: relative;
+    overflow: hidden; /* Verhindert das Überlaufen des vergrößerten Bildes */
+}
+
+.profilbild {
+    width: 100%;
+    height: auto; 
+    transition: transform 0.5s ease;
+    margin-bottom: 0.5rem;
+}
+
+.grider4 .profilbild:hover {
+    transform: scale(1.04); 
+}
+
+.grider4 a:hover {
+    color: rgba(250, 250, 250, 0.7);
+}
+/*----------- KONTAKT -----------*/
+#form {
+    min-height: 100svh;
+    width: 100%;
+    background: linear-gradient(
+        rgba(0,0,0,0.5), 
+        rgba(0, 0, 0, 0.9)),
+        url(images/quality.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 4rem;
+}
+
+#form a p:hover {
+    color: rgba(250, 250, 250, 0.7);
+}
+.footer-foot a {
+    font-size: 1rem;
+}
+
+form {
+    max-width: 700px;
+    margin: 0 auto;
+}  
+
+.contact-inputs, button {
+    display: block;
+    margin: 0 auto;
+}
+
+.contact-inputs {
+    width: 100%;
+    color: white;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    padding-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid white;
+}
+
+.contact-inputs::placeholder {
+    color: rgba(250, 250, 250, 0.88);
+    font-family: Raleway;
+}
+
+textarea {
+    height: 8rem;
+    margin-top: 1.7rem;
+    font-size: 0.9rem;
+    resize: none;
+    font-family: Raleway;
+}
+
+.contact-inputs:focus {
+    border: -1px solid orange;
+}
+
+.inputs {
+    display: block;
+    margin-bottom: 1rem;
+}
+input[type="checkbox"]:hover, .inputs label:hover{
+    cursor: pointer;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+input[type=number] {
+            -moz-appearance: textfield;
+        }
+
+input[type="checkbox"] {
+    height: 1rem;
+    width: 1rem;
+    margin: 0 0.75rem 0 0;
+    background-color: transparent; /* Hintergrundfarbe auf transparent setzen */
+    border: 1px solid #ccc; /* Optionale Randfarbe für Sichtbarkeit */
+    -webkit-appearance: none; /* Entfernt das Standard-Aussehen in Webkit-Browsern */
+    -moz-appearance: none; /* Entfernt das Standard-Aussehen in Firefox */
+    appearance: none; /* Entfernt das Standard-Aussehen in unterstützenden Browsern */
+}
+
+input[type="checkbox"]:checked {
+    background-color: #fff;
+}
+
+
+.form-title {
+    margin: 2.5rem 0 1rem 0;
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.form-titles {
+    margin: 1rem 0 0.75rem 0;
+    font-weight: 500;
+    font-size: 1.15rem;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 2rem;
+}
+
+form a {
+    color: white;
+}
+form a:hover {
+    color: rgba(250, 250, 250, 0.7);
+}
+
+.submit-button {
+    width: 20rem;
+    height: 2.5rem;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    margin-top: 3rem;
+    font-size: 1rem;
+    transition: 0.4s;
+}
+
+.submit-button:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 50%;
+  }
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+/*----------- IMPRESSUM -----------*/  
+#impressum {
+    min-height: 100svh;
+    width: 100%;
+    background: linear-gradient(
+        rgba(0,0,0,0.5), 
+        rgba(0, 0, 0, 0.9)),
+        url(images/iso2.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 4rem;
+    }
+
+.quer {
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    margin-bottom: 1rem;
+}
+
+.imp-bio {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+#agb img {
+    margin: 0 auto;
+    filter: invert(100%);
+    height: 70px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+#agb img:hover {
+    transform: scale(1.06);
+}
+
+/*----------- MEDIA QUERYS -----------*/
+@media (prefers-reduced-motion: no-preference) {
+    *{scroll-behavior: smooth;}
+}
+
+@media screen and (max-width: 1300px) {
+    nav ul {
+        padding-top: 5rem;
+    }
+    nav ul li {
+        margin-bottom: 3.5rem;
+    }
+    .side-nav {
+        left: 33px;
+        transform: translateY(20%);
+      }
+    .side-nav a img {
+        height: 40px;
+        object-fit: cover;
+    }
+    .side-nav a {
+        margin: 22px 0; /* Platz zwischen den Links */
+    }
+    .main-h1 {
+        padding-top: 250px;
+    }
+    .btn {
+        padding-top: 100px;
+    }
+    .quote-container {
+        max-width: 900px;
+    }
+    .grid-container {
+        padding: 3rem 2rem;
+        max-width: 900px;
+    }
+    .grider:first-child {
+        text-align: center;
+    }
+    .grid2-container {
+        padding: 3rem 0rem 2.5rem 0;
+        max-width: 1000px; /* Ändere von 80% auf auto */
+        gap: 30px;
+    }
+    .grider2 {
+        padding: 0 1.5rem 1rem 1.5rem;
+        width: 300px;
+        height: 190px;
+    }
+    .grider2-top img {
+        height: 60px;
+        margin: 10px 8px 8px 8px;
+    }
+    .grider2 p {
+        padding-bottom: 0.4rem;
+    }
+    
+    #schulung .btn2 {
+        padding: 0 0 50px 0;
+    }
+    .schulungs-column {
+        margin: 2rem 0 0 0;
+    }
+    .btn2 a {
+        min-width: 200px;
+    }
+    .abstand-unten {
+        padding-bottom: 0;
+    }
+    .schulung {
+        max-width: 1000px;
+        padding-top: 60px;
+    }
+    .schulung .top-schulung img {
+        width: 400px;    
+    }
+    .schulungs-titel {
+        font-size: 1.8rem;
+    }
+    .schulung-bio h3 {
+        font-size: 1.3rem;
+    }
+    .schulung-bio p {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .grid2-container {
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 70%;
+        margin: 0 auto;
+        gap: 1rem;
+    }
+    .top-schulung {
+        display: block;
+    }
+    .top-schulung img {
+        margin: -1rem 0 3rem 0;
+    }
+    .side-nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #logo {
+        max-width: 200px;
+        top: 44px;
+    }
+    .menubtn {
+        width: 40px;
+        height: 40px;
+        position: fixed;
+        right: 30px;
+        top: 30px;
+    }
+    .menubtn img {
+        width: 44px;
+        height: auto;
+        padding-top: 15px;
+        filter: invert(100%);
+        transition: transform 0.5s ease;
+    }
+    .rest-h1 {
+        padding-top: 120px;
+    }
+    .quote-container {
+        display: block;
+        padding-top: 2rem;
+        max-width: 85%;
+        text-align: center;
+    }
+
+    .grid-container {
+        display: block;
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .grider {
+        margin-bottom: 1rem;
+    }
+
+    .grider:first-child {
+        border: none;
+    }
+    
+    .go-to-buttons {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0;
+    }
+    .goto-container .btn3 {
+        padding: 3rem 0;
+    }
+    .btn2 {
+        padding: 20px 0;
+    }
+    .partner {
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem 0;
+    }
+    .partner a {
+        margin-bottom: 2.5rem;
+    }
+    .partner img {
+        height: 75px;
+        width: auto;
+    }
+    
+    .partner a:last-child img {
+        height: 45px;
+        width: auto;
+    }
+
+    .footer-grid {
+        display: block;
+        text-align: center;
+    }
+    .footer-grider {
+        margin-bottom: 3rem;
+    }
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+    }
+    .social-icons img {
+        margin: 0 1rem;
+    }
+    .grid2-container, .grid3-container {
+        display: grid; 
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 auto;
+        gap: 1rem;
+    }
+    .bio-kasten {
+        display: block;
+    }
+    .bottom-schulung {
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+    .bottom-schulung ul li {
+        list-style: none;
+    }
+    .abstand-unten a {
+        display: none;
+    }
+    form {
+        max-width: 500px;
+    }  
+}
+
+
+@media screen and (max-width: 550px) {
+    .navigation {
+        background-color: rgba(0, 0, 0, 0.85);
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .schulung .top-schulung img {
+        width: 370px;
+    }
+    form {
+        max-width: 350px;
+    }
+    .form-grid {
+        display: block;
+    }
+    .form-titles {
+        margin-top: 2rem;
+    }
+}
+
+
+
+@media screen and (max-width: 400px) {
+    #logo {
+        display: none;
+    }
+
+    nav ul {
+        padding-top: -5rem;
+    }
+
+    .schulung .top-schulung img {
+        width: 250px;
+    }
+    form {
+        max-width: 200px;
+    }  
+    .submit-button {
+        width: 14rem;
+    }
+}
