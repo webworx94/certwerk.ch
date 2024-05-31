@@ -846,7 +846,7 @@ footer {
     min-height: 100svh;
     background: linear-gradient(
         rgba(0,0,0,0.2), 
-        rgba(0, 0, 0, 0.9)), 
+        rgba(0, 0, 0, 0.35)), 
         url(images/architect2.jpg);
     background-size: cover;
     background-position: center;
