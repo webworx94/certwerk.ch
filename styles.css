@@ -520,8 +520,8 @@ footer {
     min-height: 100svh;
     width: 100%;
     background: linear-gradient(
-        rgba(0,0,0,0.4), 
-        rgba(0, 0, 0, 0.6)),
+        rgba(0,0,0,0.25), 
+        rgba(0, 0, 0, 0.4)),
         url(images/anschlagen_von_lasten_background.jpg);
     background-size: cover;
     background-position: center;
@@ -550,7 +550,7 @@ footer {
 
 .schulung-bio {
     padding: 0 2rem;
-    background-color: rgba(26, 26, 26, 0.7);
+    background-color: rgba(26, 26, 26, 0.8);
 }
 
 .bio-kasten {
@@ -603,7 +603,7 @@ footer {
 .schulungs-column {
     padding: 2rem 1.5rem;
     margin: 2rem 0;
-    background-color: rgba(26, 26, 26, 0.7);
+    background-color: rgba(26, 26, 26, 0.8);
 }
 
 .schulungs-column h3 {
@@ -643,8 +643,8 @@ footer {
     min-height: 100svh;
     width: 100%;
     background: linear-gradient(
-        rgba(0,0,0, 0.35), 
-        rgba(0, 0, 0, 0.4)),
+        rgba(0,0,0, 0.25), 
+        rgba(0, 0, 0, 0.3)),
         url(images/scc_background.jpg);
     background-size: cover;
     background-position: center;
@@ -655,8 +655,8 @@ footer {
     min-height: 100svh;
     width: 100%;
     background: linear-gradient(
-        rgba(0,0,0,0.2), 
-        rgba(0, 0, 0, 0.6)), 
+        rgba(0,0,0,0.12), 
+        rgba(0, 0, 0, 0.3)), 
         url(images/psa_ga_titelbild.jpg);
     background-size: cover;
     background-position: center;
@@ -667,7 +667,7 @@ footer {
     width: 100%;
     background: linear-gradient(
         rgba(0,0,0,0.3), 
-        rgba(0, 0, 0, 0.45)),
+        rgba(0, 0, 0, 0.35)),
         url(images/flanschen_background.jpg);
     background-size: cover;
     background-position: center;
@@ -677,8 +677,8 @@ footer {
     min-height: 100svh;
     width: 100%;
     background: linear-gradient(
-        rgba(0,0,0,0.38), 
-        rgba(0, 0, 0, 0.65)),
+        rgba(0,0,0,0.22), 
+        rgba(0, 0, 0, 0.42)),
         url(images/cargo.jpg);
     background-size: cover;
     background-position: center;
@@ -688,8 +688,8 @@ footer {
     min-height: 100svh;
     width: 100%;
     background: linear-gradient(
-        rgba(0,0,0,0.4), 
-        rgba(0, 0, 0, 0.55)),
+        rgba(0,0,0,0.25), 
+        rgba(0, 0, 0, 0.35)),
         url(images/brandsicherung_background.jpg);
     background-size: cover;
     background-position: center;
@@ -737,8 +737,8 @@ footer {
 #iso {
     min-height: 100svh;
     background: linear-gradient(
-        rgba(0,0,0,0.2), 
-        rgba(0, 0, 0, 0.35)), 
+        rgba(0,0,0,0.1), 
+        rgba(0, 0, 0, 0.25)), 
         url(images/quality-iso.jpg);
     background-size: cover;
     background-position: center;
@@ -834,8 +834,8 @@ footer {
 #iso-9001 {
     min-height: 100svh;
     background: linear-gradient(
-        rgba(0,0,0,0.1), 
-        rgba(0, 0, 0, 0.5)), 
+        rgba(0,0,0,0.01), 
+        rgba(0, 0, 0, 0.2)), 
         url(images/iso2.jpg);
     background-size: cover;
     background-position: center;
@@ -876,8 +876,8 @@ footer {
 #about {
     min-height: 100svh;
     background: linear-gradient(
-        rgba(0, 0, 0, 0.2), 
-        rgba(0, 0, 0, 0.9)), 
+        rgba(0, 0, 0, 0.01), 
+        rgba(0, 0, 0, 0.5)), 
         url(images/about.jpg);
     background-size: cover;
     background-position: center;
@@ -907,8 +907,8 @@ footer {
     min-height: 100svh;
     width: 100%;
     background: linear-gradient(
-        rgba(0,0,0,0.5), 
-        rgba(0, 0, 0, 0.9)),
+        rgba(0,0,0,0.35), 
+        rgba(0, 0, 0, 0.65)),
         url(images/quality.jpg);
     background-size: cover;
     background-position: center;
@@ -1056,8 +1056,8 @@ form a:hover {
     min-height: 100svh;
     width: 100%;
     background: linear-gradient(
-        rgba(0,0,0,0.5), 
-        rgba(0, 0, 0, 0.9)),
+        rgba(0,0,0,0.2), 
+        rgba(0, 0, 0, 0.5)),
         url(images/iso2.jpg);
     background-size: cover;
     background-position: center;
