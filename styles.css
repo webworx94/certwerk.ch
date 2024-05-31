@@ -643,8 +643,8 @@ footer {
     min-height: 100svh;
     width: 100%;
     background: linear-gradient(
-        rgba(0,0,0, 0.43), 
-        rgba(0, 0, 0, 0.5)),
+        rgba(0,0,0, 0.35), 
+        rgba(0, 0, 0, 0.4)),
         url(images/scc_background.jpg);
     background-size: cover;
     background-position: center;
