@@ -834,8 +834,8 @@ footer {
 #iso-9001 {
     min-height: 100svh;
     background: linear-gradient(
-        rgba(0,0,0,0.2), 
-        rgba(0, 0, 0, 0.9)), 
+        rgba(0,0,0,0.1), 
+        rgba(0, 0, 0, 0.5)), 
         url(images/iso2.jpg);
     background-size: cover;
     background-position: center;
