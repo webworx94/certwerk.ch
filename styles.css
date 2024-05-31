@@ -738,7 +738,7 @@ footer {
     min-height: 100svh;
     background: linear-gradient(
         rgba(0,0,0,0.2), 
-        rgba(0, 0, 0, 0.6)), 
+        rgba(0, 0, 0, 0.35)), 
         url(images/quality-iso.jpg);
     background-size: cover;
     background-position: center;
