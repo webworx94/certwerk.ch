@@ -67,84 +67,85 @@
 
             <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
 
-                <input type="hidden" name="access_key" value="61b7aa97-f9c0-42a8-a254-09d7901d9834">
-                                   
-                  <input name="name" type="text" class="contact-inputs" placeholder="Name *" required>
-                  <input name="company" type="text" class="contact-inputs" placeholder="Firma (optional)">
-                  <input name="email" type="email" class="contact-inputs" placeholder="E-Mail *" required>
-                  <input name="phone-number" type="text" id="phone-number" class="contact-inputs" placeholder="Telefonnummer *" required>
-                  <p class="form-title">Meine Anfrage betrifft:</p>
+  <input type="hidden" name="access_key" value="61b7aa97-f9c0-42a8-a254-09d7901d9834">
 
-                    <div class="form-grid">
-                        <div>
+  <input name="name" type="text" class="contact-inputs" placeholder="Name *" required>
+  <input name="company" type="text" class="contact-inputs" placeholder="Firma (optional)">
+  <input name="email" type="email" class="contact-inputs" placeholder="E-Mail *" required>
+  <input name="phone-number" type="text" id="phone-number" class="contact-inputs" placeholder="Telefonnummer *" required>
+  <p class="form-title">Meine Anfrage betrifft:</p>
 
-                            <p class="form-titles">Sicherheitsschulung(en)</p>
-                            <div class="inputs">
-                                <input type="checkbox" id="anschlagen-kurs">
-                                <label for="anschlagen-kurs" value="0">Anschlagen von Lasten</label>
-                            </div>
-                            <div class="inputs">
-                                <input type="checkbox" id="brandsicherungs-kurs">
-                                <label for="brandsicherungs-kurs" value="1">Brandsicherung</label>
-                            </div>
-                            <div class="inputs">
-                                <input type="checkbox" id="flanschen-kurs">
-                                <label for="flanschen-kurs" value="2">Flanschen-Schulung</label>
-                            </div>
-                            <div class="inputs">
-                                <input type="checkbox" id="ladungssicherungs-kurs">
-                                <label for="ladungssicherungs-kurs" value="3">Ladungssicherung</label>
-                            </div>
-                            <div class="inputs">
-                                <input type="checkbox" id="psaga-kurs">
-                                <label for="psaga-kurs" value="4">PSA gegen Absturz</label>
-                            </div>
-                            <div class="inputs">
-                                <input type="checkbox" id="scc-kurs">
-                                <label for="scc-kurs" value="5">SCC-Kurs</label>
-                            </div>
-                        
-                        </div>
+  <div class="form-grid">
+    <div>
 
-                        <div>
+      <p class="form-titles">Sicherheitsschulung(en)</p>
+      <div class="inputs">
+        <input type="checkbox" id="anschlagen-kurs" name="sicherheitsschulung" value="Anschlagen von Lasten">
+        <label for="anschlagen-kurs">Anschlagen von Lasten</label>
+      </div>
+      <div class="inputs">
+        <input type="checkbox" id="brandsicherungs-kurs" name="sicherheitsschulung" value="Brandsicherung">
+        <label for="brandsicherungs-kurs">Brandsicherung</label>
+      </div>
+      <div class="inputs">
+        <input type="checkbox" id="flanschen-kurs" name="sicherheitsschulung" value="Flanschen-Schulung">
+        <label for="flanschen-kurs">Flanschen-Schulung</label>
+      </div>
+      <div class="inputs">
+        <input type="checkbox" id="ladungssicherungs-kurs" name="sicherheitsschulung" value="Ladungssicherung">
+        <label for="ladungssicherungs-kurs">Ladungssicherung</label>
+      </div>
+      <div class="inputs">
+        <input type="checkbox" id="psaga-kurs" name="sicherheitsschulung" value="PSA gegen Absturz">
+        <label for="psaga-kurs">PSA gegen Absturz</label>
+      </div>
+      <div class="inputs">
+        <input type="checkbox" id="scc-kurs" name="sicherheitsschulung" value="SCC-Kurs">
+        <label for="scc-kurs">SCC-Kurs</label>
+      </div>
 
-                        <p class="form-titles">ISO-Zertifizierung(en):</p>
+    </div>
 
-                            <div class="inputs">
-                                <input type="checkbox" id="iso9001">
-                                <label for="iso9001" value="6">ISO 9001 - Qualitätsmanagement</label>
-                            </div>
-                            <div class="inputs">
-                                <input type="checkbox" id="iso14001">
-                                <label for="iso14001" value="7">ISO 14001 - Umweltschutz</label>
-                            </div>
-                            <div class="inputs">
-                                <input type="checkbox" id="iso27001">
-                                <label for="iso27001" value="8">ISO 27001 - IT-Sicherheit</label>
-                            </div>
-                            <div class="inputs">
-                                <input type="checkbox" id="iso45001">
-                                <label for="iso45001" value="9">ISO 45001 - Arbeitssicherheit</label>
-                            </div>
-                            <div class="inputs">
-                                <input type="checkbox" id="iso-andere">
-                                <label for="iso-andere" value="10">Andere ISO (Anfrage)</label>
-                            </div>
-                        </div>
-                    </div>
-                  <textarea name="message" class="contact-inputs" placeholder="Ihre Nachricht" required></textarea>
+    <div>
 
-                <br>
-                    <input type="checkbox" id="accept" required>
-                    <label for="accept" value="11">Ich bin mit der Verarbeitung meiner Personendaten gemäss
-                        <a href="impressum.html#datenschutz" target="_blank">Datenschutzerklärung</a> einverstanden. *
-                    </label>
-                
-                <div class="h-captcha" data-captcha="true"></div>
+      <p class="form-titles">ISO-Zertifizierung(en):</p>
 
-                  <button class="submit-button" type="submit"><span></span>Senden</button>
-           
-            </form>
+      <div class="inputs">
+        <input type="checkbox" id="iso9001" name="iso_zertifizierung" value="ISO 9001 - Qualitätsmanagement">
+        <label for="iso9001">ISO 9001 - Qualitätsmanagement</label>
+      </div>
+      <div class="inputs">
+        <input type="checkbox" id="iso14001" name="iso_zertifizierung" value="ISO 14001 - Umweltschutz">
+        <label for="iso14001">ISO 14001 - Umweltschutz</label>
+      </div>
+      <div class="inputs">
+        <input type="checkbox" id="iso27001" name="iso_zertifizierung" value="ISO 27001 - IT-Sicherheit">
+        <label for="iso27001">ISO 27001 - IT-Sicherheit</label>
+      </div>
+      <div class="inputs">
+        <input type="checkbox" id="iso45001" name="iso_zertifizierung" value="ISO 45001 - Arbeitssicherheit">
+        <label for="iso45001">ISO 45001 - Arbeitssicherheit</label>
+      </div>
+      <div class="inputs">
+        <input type="checkbox" id="iso-andere" name="iso_zertifizierung" value="Andere ISO (Anfrage)">
+        <label for="iso-andere">Andere ISO (Anfrage)</label>
+      </div>
+    </div>
+  </div>
+  <textarea name="message" class="contact-inputs" placeholder="Ihre Nachricht" required></textarea>
+
+  <br>
+  <input type="checkbox" id="accept" required>
+  <label for="accept">Ich bin mit der Verarbeitung meiner Personendaten gemäss
+    <a href="impressum.html#datenschutz" target="_blank">Datenschutzerklärung</a> einverstanden. *
+  </label>
+
+  <div class="h-captcha" data-captcha="true"></div>
+
+  <button class="submit-button" type="submit"><span></span>Senden</button>
+
+</form>
+
 
             
             
