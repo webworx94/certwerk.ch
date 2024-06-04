@@ -65,7 +65,9 @@
                 <a href="mailto:office@certwerk.ch"><p>office@certwerk.ch</p></a>
             </div>
 
-            <form id="contact-form">
+            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+                <input type="hidden" name="access_key" value="61b7aa97-f9c0-42a8-a254-09d7901d9834">
                                    
                   <input name="name" type="text" class="contact-inputs" placeholder="Name *" required>
                   <input name="company" type="text" class="contact-inputs" placeholder="Firma (optional)">
@@ -137,7 +139,8 @@
                     <label for="accept" value="11">Ich bin mit der Verarbeitung meiner Personendaten gemäss
                         <a href="impressum.html#datenschutz" target="_blank">Datenschutzerklärung</a> einverstanden. *
                     </label>
-
+                
+                <div class="h-captcha" data-captcha="true"></div>
 
                   <button class="submit-button" type="submit"><span></span>Senden</button>
            
