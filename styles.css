@@ -1,0 +1,1342 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Fustat;
+}
+:root {
+    --logoblau: #010080;
+    --logorot: #fe0000;
+    --textgrau: #333;
+}
+/* ================== NAVIGATION ================== */
+.navbar {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+.navbar img {
+    height: 2rem;
+    width: auto;
+}
+.navbar .menu-toggle {
+    display: none;
+}
+.navbar .menu-toggle img {
+    width: 20px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.navbar .menu-toggle img.close-icon {
+    display: none;
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.navbar ul li {
+    position: relative;
+    margin-right: 20px;
+}
+.navbar ul a {
+    text-decoration: none;
+    color: var(--logoblau);
+    padding: 10px 15px;
+    display: block;
+    transition: color 0.3s ease;
+}
+.navbar ul li:hover .dropdown {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+    z-index: 1000;
+}
+.dropdown {
+    display: none;
+    white-space: nowrap;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+    z-index: 1000;
+}
+.dropdown.open {
+    display: block;
+}
+.dropdown a {
+    padding: 10px 15px;
+    color: #333;
+    white-space: nowrap;
+    transition: color 0.3s ease;
+    display: block;
+}
+.dropdown a:hover {
+    color: var(--logorot);
+}
+/* ================== START BILD ================== */
+#bild-container {
+    position: relative;
+    width: 100%;
+    height: 65vh; /* Höhe des Containers */
+    overflow: hidden;
+    background-image: url('images/sicherheitshelm-auf-kran.webp');
+    background-size: cover;
+    background-position: center bottom; /* Bild wird zentriert und nach unten ausgerichtet */
+    background-attachment: fixed; /* Bild bleibt beim Scrollen fixiert */
+}
+#bild-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Bild im Hintergrund hinter dem Inhalt */
+}
+/* ================== START HOME ================== */
+#container {
+    padding: 3rem 2rem;
+    max-width: 1300px;
+    margin: 1rem auto 0 auto;
+}
+.title-grid {
+    display: grid;
+    grid-template-columns: 73% 27%;
+    gap: 2rem;
+}
+.first-h1 {
+    color: var(--logoblau);
+    font-family: Archivo;
+    font-size: 3.5rem;
+    font-weight: 400;
+    padding: 0 0 2rem 0;
+    word-break: break-word;
+}
+.first-h2 {
+    font-weight: 375;
+    font-size: 1.6rem;
+}
+.rest-h2 {
+    text-align: center;
+    font-family: Archivo;
+    color: white;
+    font-size: 3rem;
+    font-weight: 400;
+    padding: 1rem 2rem 3rem 2rem;
+}
+.rest-h2black {
+    text-align: center;
+    font-family: Archivo;
+    color: #000;
+    font-size: 3rem;
+    font-weight: 400;
+    padding: 3rem 2rem 0 2rem;
+}
+.spacer {
+    padding: 0.5rem 0;
+}
+.left-grid {
+    padding-top: 1.5rem;
+}
+.link-buttons {
+    display: flex;
+    gap: 3rem;
+}
+.link-buttons a {
+    border: 2px solid var(--logoblau);
+    border-radius: 25px;
+    text-decoration: none;
+    padding: 0.5rem 1rem 0.4rem 1rem;
+    color: var(--logoblau);
+    font-size: 1.2rem;
+}
+.link-buttons a:hover {
+    background-color: rgba(0, 0, 109, 0.9);/*#010080*/
+    color: white;
+}
+.grid-img-container {
+    max-width: calc(100% - 4rem);
+    margin: 0 auto;
+}
+.grid-img-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1.2rem;
+}
+/* ================== ZITAT SECTION ================== */
+#zitat {
+    position: relative;
+    width: 100%;
+    height: 30svh;
+    background: url('images/arbeiter-funken.webp') no-repeat center center/cover;
+    background-attachment: fixed; /* Bild bleibt beim Scrollen fixiert */
+}
+#zitat::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 27, 0.75); /* #000031 with opacity 0.6 */
+}
+.zitat-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.zitat-text {
+    color: white;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    max-width: 60%;
+}
+.zitat-author {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 1rem;
+}
+.zitat-img img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-height: 90%;
+    object-fit: contain;
+    border-radius: 35px;
+}
+/* ================== VORTEILE ================== */
+#vorteile {
+    padding: 50px 0; /* Vertikaler Abstand um die Inhalte */
+    background: linear-gradient(30deg, #1077ff, #81b8ff 60%, #1279ff);
+}
+.vorteile-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem; /* Abstand zwischen den Spalten */
+    row-gap: 4rem;
+    max-width: 1300px; /* Maximalbreite des Inhalts */
+    margin: 0 auto; /* Zentrieren des Inhalts */
+    padding: 1rem;
+}
+.vorteil {
+    text-align: center; /* Text zentrieren */
+    color: white; /* Textfarbe weiß */
+}
+.vorteil h3 {
+    font-size: 1.5rem;
+}
+.vorteil p {
+    font-weight: 500;
+}
+.vorteil img {
+    display: block;
+    margin: 0 auto 20px; /* Zentrieren des Bildes und Abstand zum Text */
+    width: 20rem; /* Festlegen der Bildbreite */
+    height: 20rem; /* Festlegen der Bildhöhe */
+    border-radius: 50%; /* Runder Rahmen */
+}
+/* ================== PARTNER ================== */
+#partner {
+    background-color: #eeeeee;
+}
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+#partner .icon img {
+    height: 45px;
+    width: auto;
+}
+.partner {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    padding: 3rem 2rem;
+}
+.partner img {
+    height: 70px;
+    width: auto;
+    transition: transform 0.4s ease;
+}
+.partner a:last-child img {
+    height: 38px;
+    width: auto;
+}
+.partner a img:hover {
+    transform: scale(1.1);
+}
+/* ================== SICHERHEITSSCHULUNGEN ================== */
+#sicherheitsschulungen {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 4rem 0 0 0;
+    box-sizing: border-box;
+}
+#sicherheitsschulungen .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+#sicherheitsschulungen .text {
+    flex: 1;
+    max-width: 50%;
+    padding: 0 2rem;
+}
+#sicherheitsschulungen .text h1 {
+    font-size: 3.5rem;
+    color: var(--logoblau);
+    margin-bottom: 1rem;
+}
+#sicherheitsschulungen .text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--textgrau);
+    margin-bottom: 2rem;
+}
+#sicherheitsschulungen .image {
+    flex: 1;
+    max-width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#sicherheitsschulungen .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* ================== ANGEBOT ================== */
+#angebot {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+.row {
+    display: flex;
+    width: 100%;
+    height: 50%;
+}
+.column {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+.column a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Dunkler Overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    opacity: 1;
+    z-index: 1;
+}
+
+.column:hover img {
+    transform: scale(1.21);
+}
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.column img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Bilder ohne Verzerrung anpassen */
+    filter: grayscale(55%); /* Bilder in Schwarz-Weiß umwandeln */
+    transition: 1.3s;
+}
+/* ================== STARTBILD SCC-KURS ================== */
+#bild-container3 {
+    position: relative;
+    width: 100%;
+    height: 47svh; /* Höhe des Containers */
+    overflow: hidden;
+    background-image: url('images/scc-kurse.webp');
+    background-size: cover;
+    background-position: center bottom; /* Bild wird zentriert und nach unten ausgerichtet */
+    background-attachment: fixed; /* Bild bleibt beim Scrollen fixiert */
+}
+/* ================== SCHULUNG ANSCHLAGEN VON LASTEN ================== */
+#bild-container2 {
+    position: relative;
+    width: 100%;
+    height: 47svh; /* Höhe des Containers */
+    overflow: hidden;
+    background-image: url('images/anschlagen-von-lasten.webp');
+    background-size: cover;
+    background-position: center bottom; /* Bild wird zentriert und nach unten ausgerichtet */
+    background-attachment: fixed; /* Bild bleibt beim Scrollen fixiert */
+}
+#bild-container2 img, #bild-container3 img, #bild-container4 img, #bild-container5 img, #bild-container6 img, #bild-container7 img, #bild-container8 img, 
+#bild-container9 img, #bild-container10, #bild-container11, #bild-container12  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Bild im Hintergrund hinter dem Inhalt */
+}
+/* ================== SCHULUNG BRANDSICHERUNG ================== */
+#bild-container4 {
+    position: relative;
+    width: 100%;
+    height: 47svh; /* Höhe des Containers */
+    overflow: hidden;
+    background-image: url('images/feuerlöscher.webp');
+    background-size: cover;
+    background-position: center bottom; /* Bild wird zentriert und nach unten ausgerichtet */
+    background-attachment: fixed; /* Bild bleibt beim Scrollen fixiert */
+}
+/* ================== SCHULUNG FLANSCHEN ================== */
+#bild-container5 {
+    position: relative;
+    width: 100%;
+    height: 47svh; /* Höhe des Containers */
+    overflow: hidden;
+    background-image: url('images/rohrverbindung-flanschen.webp');
+    background-size: cover;
+    background-position: center bottom; /* Bild wird zentriert und nach unten ausgerichtet */
+    background-attachment: fixed; /* Bild bleibt beim Scrollen fixiert */
+}
+/* ================== SCHULUNG HUBARBEITSBÜHNEN ================== */
+#bild-container6 {
+    position: relative;
+    width: 100%;
+    height: 47svh; /* Höhe des Containers */
+    overflow: hidden;
+    background-image: url('images/hubarbeitsbühne-ausgefahren.webp');
+    background-size: cover;
+    background-position: center bottom; /* Bild wird zentriert und nach unten ausgerichtet */
+    background-attachment: fixed; /* Bild bleibt beim Scrollen fixiert */
+}
+/* ================== SCHULUNG LADUNGSSICHERUNG ================== */
+#bild-container7 {
+    position: relative;
+    width: 100%;
+    height: 47svh; /* Höhe des Containers */
+    overflow: hidden;
+    background-image: url('images/ladungssicherung_titelbild.webp');
+    background-size: cover;
+    background-position: center bottom; /* Bild wird zentriert und nach unten ausgerichtet */
+    background-attachment: fixed; /* Bild bleibt beim Scrollen fixiert */
+}
+/* ================== SCHULUNG PSAgA ================== */
+#bild-container8 {
+    position: relative;
+    width: 100%;
+    height: 47svh; /* Höhe des Containers */
+    overflow: hidden;
+    background-image: url('images/psa-gegen-absturz.webp');
+    background-size: cover;
+    background-position: center bottom; /* Bild wird zentriert und nach unten ausgerichtet */
+    background-attachment: fixed; /* Bild bleibt beim Scrollen fixiert */
+}
+/* ================== SCHULUNG TITEL & SPALTEN ================== */
+#schulungen .text {
+    text-align: center;
+    padding: 2rem;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+#schulungen .text h1 {
+    font-size: 3.5rem;
+    color: var(--logoblau);
+    margin-bottom: -1rem;
+}
+#schulungen .text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+#schulungen .text h2 {
+    text-align: right;
+    font-size: 2rem;
+    color: var(--logoblau);
+    margin-bottom: 1rem;
+}
+#schulungen .text .inhalt-liste {
+    columns: 1; /* Eine Spalte für die Liste */
+    padding-left: 2rem; /* Eingerückter Abstand für die Listenpunkte */
+    text-align: left;
+}
+/* Anpassung für größere Viewports */
+@media (min-width: 768px) {
+    #schulungen .text {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Zwei Spalten */
+        gap: 2rem; /* Abstand zwischen den Spalten */
+        align-items: flex-start; /* Oben ausrichten */
+    }
+
+    #schulungen .text h1,
+    #schulungen .text p {
+        grid-column: span 2; /* H1 und P über beide Spalten spannen */
+        text-align: center; /* In der Mitte zentrieren */
+    }
+
+    #schulungen .text .inhalt-liste {
+        max-width: none; /* Maximale Breite aufheben */
+    }
+}
+/* ================== SCHULUNG RASTER UNTEN ================== */
+.raster-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Automatische Anpassung der Spaltenbreite */
+    gap: 2rem; /* Abstand zwischen den Raster-Items */
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 2rem 2rem 4rem 2rem;
+}
+/* Stil für jedes Raster-Item */
+.raster-item {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.16);
+}
+/* Stil für den Kreis mit dem Bild */
+.raster-item .circle {
+    width: 120px; /* Größere Breite für den Kreis */
+    height: 120px; /* Größere Höhe für den Kreis */
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.raster-item .circle img {
+    max-width: 60%; /* Kleinere Größe für das Bild im Kreis */
+    height: auto;
+}
+.raster-item h3 {
+    margin-bottom: 0.3rem;
+}
+/* ================== KONTAKT-SECTION KLEIN ================== */
+#kontakt-section {
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/telefon.webp');
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+#kontakt-section .container {
+    max-width: 1300px; /* Maximale Breite des Containers */
+    margin: 0 auto; /* Zentrierung des Containers */
+    padding: 0 2rem; /* Innenabstand links und rechts */
+}
+#kontakt-section h2 {
+    font-size: 2.5rem; /* Schriftgröße für den Titel */
+    margin-bottom: 1rem; /* Abstand nach unten */
+}
+#kontakt-section p {
+    font-size: 1.2rem; /* Schriftgröße für den Text */
+    line-height: 1.6; /* Zeilenhöhe für bessere Lesbarkeit */
+}
+#kontakt-section .link-buttons {
+    padding-top: 3rem;
+}
+#kontakt-section .link-buttons a {
+    border: 2px solid #fff;
+    color: #fff;
+    margin: 0 auto;
+}
+#kontakt-section .link-buttons a:hover {
+    background-color: #fff;
+    color: var(--logoblau);
+}
+/* ================== ISO ZERTIFIZIERUNGEN - 9001 TITELBILD ================== */
+#bild-container9 {
+    position: relative;
+    width: 100%;
+    height: 47svh; /* Höhe des Containers */
+    overflow: hidden;
+    background-image: url('images/uhrwerk-innen.webp');
+    background-size: cover;
+    background-position: center bottom; /* Bild wird zentriert und nach unten ausgerichtet */
+    background-attachment: fixed; /* Bild bleibt beim Scrollen fixiert */
+}
+#schulungen h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--logoblau);
+}
+.raster-item a {
+    color: black;
+    font-weight: 600;
+}
+/* ================== ISO ZERTIFIZIERUNGEN - 14001 ================== */
+#bild-container10 {
+    position: relative;
+    width: 100%;
+    height: 47svh; /* Höhe des Containers */
+    overflow: hidden;
+    background-image: url('images/wald.webp');
+    background-size: cover;
+    background-position: center bottom; /* Bild wird zentriert und nach unten ausgerichtet */
+    background-attachment: fixed; /* Bild bleibt beim Scrollen fixiert */
+}
+/* ================== ISO ZERTIFIZIERUNGEN - 27001 ================== */
+#bild-container11 {
+    position: relative;
+    width: 100%;
+    height: 47svh; /* Höhe des Containers */
+    overflow: hidden;
+    background-image: url('images/data-structure.webp');
+    background-size: cover;
+    background-position: center bottom; /* Bild wird zentriert und nach unten ausgerichtet */
+    background-attachment: fixed; /* Bild bleibt beim Scrollen fixiert */
+}
+/* ================== ISO ZERTIFIZIERUNGEN - 45001 ================== */
+#bild-container12 {
+    position: relative;
+    width: 100%;
+    height: 47svh; /* Höhe des Containers */
+    overflow: hidden;
+    background-image: url('images/sicherheitshelm.webp');
+    background-size: cover;
+    background-position: center bottom; /* Bild wird zentriert und nach unten ausgerichtet */
+    background-attachment: fixed; /* Bild bleibt beim Scrollen fixiert */
+}
+/* ================== AUSBILDUNGSSTÄTTE ================== */
+#ausbildungsstaette {
+    background-color: #fff;
+    padding: 6rem 0 3rem 0;
+    text-align: center;
+}
+#ausbildungsstaette .container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+#ausbildungsstaette h1 {
+    font-size: 3.5rem;
+    color: var(--logoblau);
+    margin-bottom: 1rem;
+}
+#ausbildungsstaette p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--textgrau);
+    margin-bottom: 1.5rem;
+}
+/* ================== ÜBER UNS ================== */
+#team {
+    background: linear-gradient(30deg, #ececec, #ffffff 60%, #eeeeee);
+}
+#team .raster-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 2rem 2rem 4rem 2rem;
+}
+.teamp {
+    text-align: center;
+    font-size: 1.3rem;
+}
+#team h2 {
+    padding-top: 8rem;
+    font-size: 3rem !important;
+}
+#team .raster-item {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.16);
+}
+
+#team .raster-item .square {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 1rem;
+    overflow: hidden;
+}
+
+#team .raster-item .square img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#team .raster-item h3 {
+    margin-bottom: 0.3rem;
+}
+
+#team .raster-item p {
+    margin-top: 0.5rem;
+}
+
+#team h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--logoblau);
+    margin-bottom: 1rem;
+}
+
+#team p a {
+    color: var(--logoblau);
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+#team p a:hover {
+    text-decoration: underline;
+}
+/* ================== KONTAKT ================== */
+#kontakt {
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    margin-top: 3rem;
+    max-width: 700px;
+    margin: 6rem auto 3rem auto;
+    color: var(--logoblau);
+}
+
+#kontakt h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--logoblau);
+    margin-bottom: 1rem;
+}
+
+#kontakt p {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+#kontakt hr {
+    margin: 1rem 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+#kontakt form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#kontakt .contact-inputs {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.25rem 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+    font-family: 'Raleway', sans-serif; /* Anpassung der Font-Family für Placeholder */
+}
+
+#kontakt .contact-inputs::placeholder {
+    color: var(--logoblau);
+}
+
+#kontakt .contact-inputs:focus {
+    outline: none;
+    border-color: var(--logoblau);
+}
+
+#kontakt .form-title {
+    margin: 1.5rem 0 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#kontakt .form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+#kontakt .form-grid .inputs {
+    margin-bottom: 1rem;
+}
+
+#kontakt .form-titles {
+    margin: 1rem 0;
+    font-weight: bold;
+    text-align: left;
+}
+
+#kontakt .submit-button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+#kontakt .submit-button:hover {
+    background-color: var(--logoblau);
+}
+
+#kontakt textarea {
+    height: 8rem;
+    padding: 0.7rem;
+    font-size: 0.9rem;
+    resize: none;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Raleway', sans-serif; /* Anpassung der Font-Family für Placeholder */
+}
+
+#kontakt .accept-checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+#kontakt .accept-checkbox input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+#kontakt .accept-checkbox label {
+    color: var(--logoblau);
+}
+#kontakt .accept-checkbox a {
+    color: #007bff;
+    text-decoration: none;
+}
+#kontakt .accept-checkbox a:hover {
+    text-decoration: underline;
+}
+.map-container {
+    width: 100%;
+    height: 40vh;
+}
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+/* ================== IMPRESSUM & AGB ================== */
+#impressum, #agb {
+    background-color: #fff;
+    padding: 6rem 2rem 3rem 2rem;
+    box-sizing: border-box;
+}
+#impressum .container, #agb .container {
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: left;
+}
+#impressum h1, #agb h1 {
+    font-size: 3.5rem;
+    color: var(--logoblau);
+    margin-bottom: 1rem;
+}
+#impressum h2, #agb h2 {
+    font-size: 2rem;
+    color: var(--logoblau);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+#impressum p, #agb p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--textgrau);
+    margin-bottom: 1.5rem;
+}
+#agb a {
+    color: var(--logoblau);
+    text-decoration: underline;
+}
+#agb a:hover {
+    text-decoration: none;
+}
+/* ================== DATENSCHUTZ ================== */
+#datenschutz {
+    background-color: #fff;
+    padding: 6rem 2rem 3rem 2rem;
+    box-sizing: border-box;
+}
+#datenschutz .container {
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: left;
+}
+#datenschutz h1 {
+    font-size: 3.5rem;
+    color: var(--logoblau);
+    margin-bottom: 1rem;
+}
+#datenschutz h2 {
+    font-size: 2rem;
+    color: var(--logoblau);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+#datenschutz p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--textgrau);
+    margin-bottom: 1.5rem;
+}
+#datenschutz ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: var(--textgrau);
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+#datenschutz ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* ================== FOOTER ================== */
+footer {
+    background-color: var(--textgrau);
+    color: white;
+    padding: 20px 0;
+}
+.footer-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 1.5rem 20px;
+}
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+.footer-top a {
+    color: white;
+    transition: opacity 0.2s;
+    text-decoration: none;
+}
+.footer-top a:hover {
+    opacity: 0.7;
+}
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+}
+.footer-column:nth-child(2) {
+    margin-left: -3rem; /* Adjust the left margin for the third column */
+}
+.footer-column:nth-child(3) {
+    margin-left: -3rem; /* Adjust the left margin for the third column */
+}
+.footer-column:nth-child(4) {
+    margin-left: 6rem; /* Adjust the left margin for the third column */
+}
+.footer-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.footer-column p {
+    line-height: 1.6;
+}
+.footer-divider {
+    border: none;
+    border-top: 1px solid white;
+    margin: 20px 0;
+}
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer-social {
+    display: flex;
+    gap: 10px;
+}
+.footer-social a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+.footer-social img {
+    filter: invert(100%);
+    opacity: 0.8;
+    width: 28px;
+    height: 28px;
+    transition: opacity 0.1s ease;
+}
+.footer-social a:hover img {
+    opacity: 1.0;
+}
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.footer-links a:hover {
+    color: rgba(250, 250, 250, 0.7);
+}
+/* ================== MEDIA QUERYS ================== */
+@media (max-width: 1300px) {
+    #sicherheitsschulungen .text h1 {
+        font-size: 2.8rem;
+    }
+}
+@media (max-width: 1200px) {
+    .title-grid {
+        display: grid;
+        grid-template-columns: 65% 35%;
+    }
+    .vorteile-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-column:nth-child(2) {
+        margin-left: -1rem; /* Adjust the left margin for the third column */
+    }
+    .footer-column:nth-child(3) {
+        margin-left: -0rem; /* Adjust the left margin for the third column */
+    }
+    .footer-column:nth-child(4) {
+        margin-left: 4rem; /* Adjust the left margin for the third column */
+    }
+}
+@media (max-width: 1130px) {
+    .navbar img {
+        height: 1.5rem;
+    }
+    .navbar .menu-toggle {
+        display: flex;
+        align-items: center;
+        margin-right: 1rem;
+        background: none;
+        border: none;
+    }
+    .navbar .menu-toggle img {
+        display: block;
+    }
+    .navbar .menu-toggle img.close-icon {
+        display: none;
+    }
+    .navbar .menu-toggle img.rotate {
+        transform: rotate(180deg);
+    }
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 3.8rem;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+    }
+    .navbar ul.open {
+        display: flex;
+    }
+    .navbar ul .dropdown {
+        display: none;
+        position: static;
+        background-color: transparent;
+        box-shadow: none;
+        min-width: auto;
+        z-index: auto;
+    }
+    .navbar ul .dropdown a {
+        padding: 15px;
+        border-bottom: 1px solid #ccc;
+    }
+    .navbar ul .dropdown-toggle {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 15px;
+        cursor: pointer;
+    }
+}
+@media (max-width: 1000px) {
+    .title-grid {
+        display: block;
+    }
+    .left-grid {
+        padding-top: 0rem;
+    }
+    .grid-img-container {
+        max-width: 300px;
+    }
+    .grid-img-container img {
+        margin: 2rem auto;
+        width: 100%;
+        display: block;
+    }
+    .first-h1 {
+        font-size: 2.9rem;
+    }
+    .rest-h2 {
+        font-size: 2.7rem;
+    }
+    #zitat {
+        height: auto; /* Automatische Höhe basierend auf dem Inhalt */
+    }
+    .zitat-container {
+        display: block; /* Container wird zu einem Block-Element */
+        text-align: center; /* Zentriert den Text */
+        max-width: 100%; /* Maximale Breite auf 100% des Viewports setzen */
+        padding: 2rem; /* Padding für den Container hinzufügen */
+    }
+    .zitat-text {
+        max-width: 100%; /* Breite des Textes auf 100% des Containers setzen */
+        margin-bottom: 1rem; /* Abstand zwischen Text und Bild */
+    }
+    .zitat-img {
+        display: none;
+    }
+    .partner {
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem 0;
+    }
+    .partner a {
+        margin-bottom: 2.5rem;
+    }
+    .partner img {
+        height: 75px;
+        width: auto;
+    }
+    .partner a:last-child img {
+        height: 45px;
+        width: auto;
+    }
+    #sicherheitsschulungen .text h1 {
+        font-size: 2.6rem;
+    }
+    #sicherheitsschulungen .text p {
+        font-size: 1.1rem;
+    }
+    .row {
+        flex-wrap: wrap;
+    }
+    .column {
+        flex-basis: 50%; /* Zwei Spalten pro Zeile */
+        max-width: 50%;
+    }
+}
+@media (max-width: 947px) {
+    .footer-column:nth-child(4) {
+        margin-left: 0rem; /* Adjust the left margin for the third column */
+    }
+}
+@media (max-width: 800px) {
+    .vorteile-container {
+        display: block;
+    }
+    .vorteil {
+        margin-bottom: 3rem;
+    }
+    #sicherheitsschulungen {
+        height: auto;
+
+    }
+    #sicherheitsschulungen .container {
+        flex-direction: column; /* Spaltenanordnung für kleinere Bildschirme */
+    }
+    #sicherheitsschulungen .text,
+    #sicherheitsschulungen .image {
+        max-width: 100%;
+        text-align: center; /* Zentriert Text und Bild */
+        padding: 0 1rem; /* Abstand anpassen */
+    }
+    #sicherheitsschulungen .text {
+        padding: 2rem;
+    }
+    #sicherheitsschulungen .text p {
+        font-size: 1.2rem;
+    }
+    #sicherheitsschulungen .image {
+        margin: 1rem 0;
+        height: auto; /* Automatische Höhe */
+    }
+    #sicherheitsschulungen .link-buttons a {
+        margin: 0 auto;
+    }
+}
+@media (max-width: 768px) {
+    #content-container {
+        flex-direction: column;
+        text-align: center; /* Zentriert den Text */
+    }
+    .content-left {
+        padding-right: 0; /* Entfernt den Abstand rechts zum Bild */
+        margin-bottom: 2rem; /* Abstand nach unten zum Bild */
+    }
+    .content-right h1 {
+        font-size: 2rem;
+    }
+    .content-right p {
+        font-size: 1rem;
+    }
+    #schulungen .text h1 {
+        font-size: 3.5rem;
+        color: var(--logoblau);
+        margin-bottom: 0.5rem;
+    }
+    #schulungen .text h2 {
+        text-align: center;
+        font-size: 2rem;
+        color: var(--logoblau);
+        margin: 3rem 0 1rem 0;
+    }
+    .raster-container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .footer-top {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .footer-social,
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer-social {
+        margin-bottom: 1.5rem;
+    }
+    .footer-column:nth-child(2),
+    .footer-column:nth-child(3),
+    .footer-column:nth-child(4) {
+        margin-left: 0; /* Set initial margin-left for all */
+    }
+    #datenschutz h1, #agb h1 {
+        font-size: 2rem;
+        word-wrap: break-word;
+    }
+}
+@media (max-width: 600px) {
+    .bild-container {
+        height: 55vh;
+    }
+    .first-h1 {
+        font-size: 2.6rem;
+    }
+    .first-h2 {
+        font-size: 1.45rem;
+    }
+    .rest-h2 {
+        font-size: 2.4rem;
+    }
+    .link-buttons {
+        display: block; /* Ändert die Anordnung auf untereinander */
+        text-align: center; /* Zentriert die Links, wenn sie gestapelt sind */
+    }
+    .link-buttons a {
+        display: block; /* Macht die Links blockweise für die volle Breite */
+        margin-bottom: 1rem; /* Fügt einen Abstand zwischen den Links hinzu */
+    }
+    #sicherheitsschulungen .text h1 {
+        font-size: 2rem;
+    }
+    .column:first-child {
+        display: none; /* Erste Spalte ausblenden */
+    }
+    .iso-section .column:first-child {
+        display: block; /* Stelle sicher, dass die erste Spalte angezeigt wird */
+    }
+    .column {
+        flex-basis: 100%; /* Eine Spalte pro Zeile */
+        max-width: 100%;
+    }
+    #kontakt-section h2 {
+        font-size: 2.1rem;
+    }
+    .ausweicher-h1 {
+        font-size: 2rem !important;
+    }
+    #kontakt .form-grid {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 480px) {
+    .raster-container {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+    .raster-item .circle {
+        width: 100px; /* Anpassung der Kreisgröße für kleine Bildschirme */
+        height: 100px;
+    }
+    .raster-item .circle img {
+        max-width: 70%; /* Anpassung der Bildgröße im Kreis für kleine Bildschirme */
+    }
+}
+@media (max-width: 400px) {
+    .vorteil img {
+        transform: scale(0.9);
+    }
+    #sicherheitsschulungen .text h1 {
+        font-size: 1.7rem;
+    }
+    .ausweicher-h1 {
+        font-size: 1.8rem !important;
+    }
+}
