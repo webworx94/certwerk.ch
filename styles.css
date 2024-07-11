@@ -1268,6 +1268,10 @@ footer {
     .footer-column:nth-child(4) {
         margin-left: 0; /* Set initial margin-left for all */
     }
+    #datenschutz h1, #agb h1 {
+        font-size: 2rem;
+        word-wrap: break-word;
+    }
 }
 @media (max-width: 600px) {
     .bild-container {
