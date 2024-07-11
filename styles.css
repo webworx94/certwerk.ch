@@ -648,6 +648,27 @@ body {
     background-position: center bottom; /* Bild wird zentriert und nach unten ausgerichtet */
     background-attachment: fixed; /* Bild bleibt beim Scrollen fixiert */
 }
+/* ================== AUSBILDUNGSSTÄTTE ================== */
+#ausbildungsstaette {
+    background-color: #fff;
+    padding: 6rem 0 3rem 0;
+    text-align: center;
+}
+#ausbildungsstaette .container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+#ausbildungsstaette h1 {
+    font-size: 3.5rem;
+    color: var(--logoblau);
+    margin-bottom: 1rem;
+}
+#ausbildungsstaette p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--textgrau);
+    margin-bottom: 1.5rem;
+}
 /* ================== ÜBER UNS ================== */
 #team {
     background: linear-gradient(30deg, #ececec, #ffffff 60%, #eeeeee);
