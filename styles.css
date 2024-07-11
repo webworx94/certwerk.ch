@@ -829,12 +829,10 @@ body {
 #kontakt .accept-checkbox label {
     color: var(--logoblau);
 }
-
 #kontakt .accept-checkbox a {
     color: #007bff;
     text-decoration: none;
 }
-
 #kontakt .accept-checkbox a:hover {
     text-decoration: underline;
 }
@@ -842,39 +840,45 @@ body {
     width: 100%;
     height: 40vh;
 }
-
 .map-container iframe {
     width: 100%;
     height: 100%;
     border: 0;
 }
-/* ================== IMPRESSUM ================== */
-#impressum {
+/* ================== IMPRESSUM & AGB ================== */
+#impressum, #agb {
     background-color: #fff;
     padding: 6rem 2rem 3rem 2rem;
     box-sizing: border-box;
 }
-#impressum .container {
+#impressum .container, #agb .container {
     max-width: 1300px;
     margin: 0 auto;
     text-align: left;
 }
-#impressum h1 {
+#impressum h1, #agb h1 {
     font-size: 3.5rem;
     color: var(--logoblau);
     margin-bottom: 1rem;
 }
-#impressum h2 {
+#impressum h2, #agb h2 {
     font-size: 2rem;
     color: var(--logoblau);
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
-#impressum p {
+#impressum p, #agb p {
     font-size: 1.2rem;
     line-height: 1.6;
     color: var(--textgrau);
     margin-bottom: 1.5rem;
+}
+#agb a {
+    color: var(--logoblau);
+    text-decoration: underline;
+}
+#agb a:hover {
+    text-decoration: none;
 }
 /* ================== DATENSCHUTZ ================== */
 #datenschutz {
