@@ -1313,6 +1313,9 @@ footer {
     .ausweicher-h1, .salüh1 {
         font-size: 2rem !important;
     }
+    .ausweicher-h2 {
+        font-size: 1.5rem !important;
+    }
     #kontakt .form-grid {
         grid-template-columns: 1fr;
     }
