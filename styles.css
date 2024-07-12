@@ -1218,7 +1218,7 @@ footer {
         height: auto; /* Automatische Höhe */
     }
     #sicherheitsschulungen .link-buttons a {
-        margin: 0 auto;
+        margin: 1rem auto;
     }
 }
 @media (max-width: 768px) {
