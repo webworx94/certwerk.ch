@@ -733,7 +733,6 @@ body {
 #team p a {
     color: var(--logoblau);
     text-decoration: none;
-    margin-right: 1rem;
 }
 
 #team p a:hover {
