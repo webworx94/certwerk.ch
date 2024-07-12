@@ -293,6 +293,11 @@ body {
 .partner a img:hover {
     transform: scale(1.1);
 }
+#partner p {
+    padding: 0 0 2rem 0;
+    font-size: 1.2rem;
+    text-align: center;
+}
 /* ================== SICHERHEITSSCHULUNGEN ================== */
 #sicherheitsschulungen {
     height: 100vh;
