@@ -126,14 +126,14 @@ body {
 .first-h1 {
     color: var(--logoblau);
     font-family: Archivo;
-    font-size: 3.5rem;
+    font-size: 3.3rem;
     font-weight: 400;
     padding: 0 0 2rem 0;
     word-break: break-word;
 }
 .first-h2 {
     font-weight: 375;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 .rest-h2 {
     text-align: center;
