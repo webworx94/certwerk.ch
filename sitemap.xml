@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>https://certwerk.ch/</loc>
+  <lastmod>2024-09-24T06:04:16+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+
+<url>
+  <loc>https://certwerk.ch/sicherheitsschulungen/</loc>
+  <lastmod>2024-09-24T06:04:16+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://certwerk.ch/iso-zertifizierungen/</loc>
+  <lastmod>2024-09-24T06:04:16+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+
+<!-- Sicherheitsschulungen -->
+<url>
+  <loc>https://certwerk.ch/sicherheitsschulungen/scc-kurse/</loc>
+  <lastmod>2024-09-24T06:04:16+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://certwerk.ch/sicherheitsschulungen/anschlagen-von-lasten/</loc>
+  <lastmod>2024-09-24T06:04:16+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://certwerk.ch/sicherheitsschulungen/brandsicherung/</loc>
+  <lastmod>2024-09-24T06:04:16+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://certwerk.ch/sicherheitsschulungen/flanschen-schulung/</loc>
+  <lastmod>2024-09-24T06:04:16+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://certwerk.ch/sicherheitsschulungen/hubarbeitsbuehnen/</loc>
+  <lastmod>2024-09-24T06:04:16+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://certwerk.ch/sicherheitsschulungen/ladungssicherung/</loc>
+  <lastmod>2024-09-24T06:04:16+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://certwerk.ch/sicherheitsschulungen/PSA-gegen-absturz/</loc>
+  <lastmod>2024-09-24T06:04:16+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+
+<!-- ISO-Zertifizierungen -->
+<url>
+  <loc>https://certwerk.ch/iso-zertifizierungen/iso-9001/</loc>
+  <lastmod>2024-09-24T06:04:16+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://certwerk.ch/iso-zertifizierungen/iso-14001/</loc>
+  <lastmod>2024-09-24T06:04:16+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://certwerk.ch/iso-zertifizierungen/iso-27001/</loc>
+  <lastmod>2024-09-24T06:04:16+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://certwerk.ch/iso-zertifizierungen/iso-45001/</loc>
+  <lastmod>2024-09-24T06:04:16+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+
+<!-- Statische Seiten -->
+<url>
+  <loc>https://certwerk.ch/ausbildungsstaette/</loc>
+  <lastmod>2024-09-24T06:04:16+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://certwerk.ch/ueber-uns/</loc>
+  <lastmod>2024-09-24T06:04:16+00:00</lastmod>
+  <priority>0.50</priority>
+</url>
+<url>
+  <loc>https://certwerk.ch/kontakt/</loc>
+  <lastmod>2024-09-24T06:04:16+00:00</lastmod>
+  <priority>0.40</priority>
+</url>
+<url>
+  <loc>https://certwerk.ch/impressum/</loc>
+  <lastmod>2024-09-24T06:04:16+00:00</lastmod>
+  <priority>0.20</priority>
+</url>
+<url>
+  <loc>https://certwerk.ch/datenschutz/</loc>
+  <lastmod>2024-09-24T06:04:16+00:00</lastmod>
+  <priority>0.20</priority>
+</url>
+<url>
+  <loc>https://certwerk.ch/agb/</loc>
+  <lastmod>2024-09-24T06:04:16+00:00</lastmod>
+  <priority>0.20</priority>
+</url>
+
+<!-- PDFs -->
+<url>
+  <loc>https://certwerk.ch/kurstermine.pdf</loc>
+  <lastmod>2024-09-24T06:04:16+00:00</lastmod>
+  <priority>0.15</priority>
+</url>
+<url>
+  <loc>https://certwerk.ch/AGB_certwerk.pdf</loc>
+  <lastmod>2024-09-24T06:04:16+00:00</lastmod>
+  <priority>0.15</priority>
+</url>
+
+</urlset>
