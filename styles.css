@@ -187,6 +187,7 @@ body {
     position: relative;
     width: 100%;
     height: 30svh;
+    min-height: 300px;
     background: url('images/arbeiter-funken.webp') no-repeat center center/cover;
     background-attachment: fixed; /* Bild bleibt beim Scrollen fixiert */
 }
