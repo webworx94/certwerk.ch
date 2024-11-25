@@ -79,3 +79,32 @@
 
     changeColorToLogorot(); // Setze die Farbe der Hauptlinks beim Laden der Seite
 });
+
+
+// FORMULAR SENDEN
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('contact-form');
+    
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Verhindert das automatische Absenden des Formulars
+
+        const formData = new FormData(form);
+
+        fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        }).then(response => {
+            if (response.ok) {
+                form.reset(); // Leert das Formular
+                alert('Vielen Dank für die Übermittlung des Formulars. Wir werden uns sobald wie möglich bei Ihnen melden.');
+            } else {
+                alert('Es gab ein Problem beim Senden des Formulars. Bitte versuchen Sie es erneut.');
+            }
+        }).catch(error => {
+            alert('Es gab ein Problem beim Senden des Formulars. Bitte versuchen Sie es erneut.');
+        });
+    });
+});
