@@ -81,50 +81,6 @@
 });
 
 
-// NAVIGATION HOVER
-document.addEventListener("DOMContentLoaded", function() {
-    const navLinks = document.querySelectorAll(".navbar ul > li > a");
-    const dropdowns = document.querySelectorAll(".dropdown");
-
-    // Funktion zum Ändern der Farbe der Hauptlinks
-    function changeColorToLogorot() {
-        navLinks.forEach(link => {
-            if (link.classList.contains("active")) {
-                link.style.color = "var(--logorot)";
-            } else {
-                link.style.color = "var(--logoblau)";
-            }
-        });
-    }
-    // Event Listener für Mouseenter und Mouseleave für Hauptlinks und Dropdown-Links
-    navLinks.forEach(link => {
-        link.addEventListener("mouseenter", function() {
-            link.classList.add("active");
-            changeColorToLogorot();
-        });
-
-        link.addEventListener("mouseleave", function() {
-            link.classList.remove("active");
-            changeColorToLogorot();
-        });
-        // Event Listener für Dropdown-Links
-        const dropdown = link.nextElementSibling;
-        if (dropdown && dropdown.classList.contains("dropdown")) {
-            dropdown.addEventListener("mouseenter", function() {
-                link.classList.add("active");
-                changeColorToLogorot();
-            });
-            dropdown.addEventListener("mouseleave", function() {
-                link.classList.remove("active");
-                changeColorToLogorot();
-            });
-        }
-    });
-    // Setze die Farbe der Hauptlinks beim Laden der Seite
-    changeColorToLogorot();
-});
-
-
 // FORMULAR SENDEN
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('contact-form');
