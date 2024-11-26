@@ -674,9 +674,8 @@ body {
     color: var(--textgrau);
     margin-bottom: 1.5rem;
 }
-.link-buttons2 {
+.link-buttons2 a {
     margin: 0 auto;
-    text-align: center;
 }
 /* ================== ÜBER UNS ================== */
 #team {
