@@ -10,13 +10,13 @@
         navbarUl.classList.toggle('open'); // Toggle-Klasse für das Öffnen und Schließen des Menüs
         
         if (menuIcon.classList.contains('hidden')) {
-            menuIcon.src = 'images/menu.png';
-            closeIcon.src = 'images/cancel.png';
+            menuIcon.src = 'https://certwerk.ch/images/menu.png';
+            closeIcon.src = 'https://certwerk.ch/images/cancel.png';
             menuIcon.classList.remove('hidden');
             closeIcon.classList.add('hidden');
         } else {
-            menuIcon.src = 'images/cancel.png';
-            closeIcon.src = 'images/menu.png';
+            menuIcon.src = 'https://certwerk.ch/images/cancel.png';
+            closeIcon.src = 'https://certwerk.ch/images/menu.png';
             menuIcon.classList.add('hidden');
             closeIcon.classList.remove('hidden');
         }
