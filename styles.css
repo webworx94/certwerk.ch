@@ -653,7 +653,7 @@ body {
     background-position: center bottom; /* Bild wird zentriert und nach unten ausgerichtet */
     background-attachment: fixed; /* Bild bleibt beim Scrollen fixiert */
 }
-/* ================== AUSBILDUNGSSTÄTTE ================== */
+/* ================== KURSTERMINE ================== */
 #ausbildungsstaette {
     background-color: #fff;
     padding: 6rem 0 3rem 0;
@@ -668,6 +668,8 @@ body {
     color: var(--logoblau);
     margin-bottom: 1rem;
 }
+#ausbildungsstaette a {
+    text-align: center;
 #ausbildungsstaette p {
     font-size: 1.2rem;
     line-height: 1.6;
