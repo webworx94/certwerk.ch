@@ -668,8 +668,6 @@ body {
     color: var(--logoblau);
     margin-bottom: 1rem;
 }
-#ausbildungsstaette a {
-    text-align: center;
 #ausbildungsstaette p {
     font-size: 1.2rem;
     line-height: 1.6;
