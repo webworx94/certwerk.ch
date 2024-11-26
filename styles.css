@@ -674,6 +674,10 @@ body {
     color: var(--textgrau);
     margin-bottom: 1.5rem;
 }
+.link-buttons2 {
+    margin: 0 auto;
+    text-align: center;
+}
 /* ================== ÜBER UNS ================== */
 #team {
     background: linear-gradient(30deg, #ececec, #ffffff 60%, #eeeeee);
