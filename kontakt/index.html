@@ -80,11 +80,14 @@
             <p>+41 (0)41 541 52 22 | <a href="mailto:office@certwerk.ch">office@certwerk.ch</a></p>
             <br>
             <br>
-            <form id="contact-form" action="https://ogerecun.myhostpoint.ch/process_form.php" method="post" class="contact-form">
+            <form id="contact-form" action="https://web-worx.ch/formulare/certwerk_process_form.php" method="post" class="contact-form">
                 <input type="hidden" name="form_id" value="190120241902">
                 <input name="name" type="text" class="contact-inputs" placeholder="Name *" required>
+                <input type="text" id="user_address" name="user_address" placeholder="Deine Adresse">
                 <input name="company" type="text" class="contact-inputs" placeholder="Firma (optional)">
+                <input type="text" id="company_name" name="company_name" placeholder="Firmenname">
                 <input name="email" type="email" class="contact-inputs" placeholder="E-Mail *" required>
+                <input type="email" id="confirm_email" name="confirm_email" placeholder="E-Mail bestätigen">
                 <input name="phone-number" type="text" class="contact-inputs" placeholder="Telefonnummer *" required>
         
                 <p class="form-title">Meine Anfrage betrifft:</p>
@@ -148,11 +151,13 @@
                 </div>
         
                 <textarea name="message" class="contact-inputs" placeholder="Ihre Nachricht" required></textarea>
+                <textarea id="feedback_notes" name="feedback_notes" placeholder="Feedback-Notizen"></textarea>
+    			<input type="text" id="referral_code" name="referral_code" placeholder="Empfehlungscode">
         
                 <div class="inputs">
                     <input type="checkbox" id="accept" required>
                     <label for="accept">Ich bin mit der Verarbeitung meiner Personendaten gemäss
-                        <a href="https://certwerk.ch/datenschutz/">Datenschutzerklärung</a> einverstanden. *</label>
+                        <a href="https://certwerk.ch/datenschutz/" target="_blank">Datenschutzerklärung</a> einverstanden. *</label>
                 </div>
         
                 <button class="submit-button" type="submit">Senden</button>
