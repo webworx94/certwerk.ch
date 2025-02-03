@@ -276,7 +276,8 @@ body {
 .partner {
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 2rem;
     align-items: center;
     max-width: 1300px;
     padding: 3rem 2rem;
