@@ -209,8 +209,18 @@
           </div>
         </div>
     </footer>         
-    
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+    document.getElementById('contact-form').addEventListener('submit', function (event) {
+        if (grecaptcha.getResponse().length === 0) {
+            event.preventDefault();
+            alert('⚠️ Bitte bestätigen Sie, dass Sie kein Roboter sind.');
+        }
+    });
+    </script>
     <script src="../script.js"></script>
 </body>
 </html>
+
 
